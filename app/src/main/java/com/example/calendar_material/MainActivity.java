@@ -64,8 +64,6 @@ public class MainActivity extends AppCompatActivity {
         textView2=findViewById(R.id.textView2);
         contextEditText=findViewById(R.id.contextEditText);
 
-
-
         //로그인 회원가입 액티비티에서 이름 받아오기 지금은 임의로 아이디 고정해놓음
         Intent intent=getIntent();
         String name=intent.getStringExtra("userName");
@@ -83,8 +81,6 @@ public class MainActivity extends AppCompatActivity {
         materialCalendarView.addDecorator(new MySelectorDecorator(this));//선택할떄 모양
         materialCalendarView.addDecorator(new SundayDecorator());//일요일에 색칠하기
         materialCalendarView.addDecorator(new SaturdayDecorator());//토요일에 색칠하기
-
-
 
 
 
@@ -136,7 +132,6 @@ public class MainActivity extends AppCompatActivity {
                 set.add(eventDay2);
                 materialCalendarView.addDecorator(new EventDecorator(Color.rgb(255,102,102),set));//51,153,153
                 
-
 
             }
         });
@@ -245,6 +240,4 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-
-
 }
